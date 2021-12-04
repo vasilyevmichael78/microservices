@@ -12,4 +12,7 @@ public  class Utils {
         return customers.stream().filter(customer -> customer.getAge()<age)
                 .collect(Collectors.toList());
     }
+    public static void printList(List<Customer> customerList){
+       customerList.forEach(System.out::println);
+    }
 }
